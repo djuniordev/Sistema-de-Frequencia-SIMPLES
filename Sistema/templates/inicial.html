@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Seja bem vindo {{ usuario }}!</h1>
+    <br>
+    <h2>Suas Turmas:</h2>
+    <ul type="square">
+    {% for i in range(tamanho_tbturmas) %}
+        {% if tabela_turmas['id'][i] == idres %}
+            {% if tabela_turmas['turmas'][i] is string and ',' in tabela_turmas['turmas'][i] %}
+                {% for turma in tabela_turmas['turmas'][i].split(',') %}
+                    <a href="/{{usuario}}/turma_{{tabela_turmas['turmas'][i]}}">{{turma}}</a><br>
+                {% endfor %}
+            {% else %}
+                <li><a href="/{{usuario}}/turma_{{tabela_turmas['turmas'][i]}}">{{tabela_turmas['turmas'][i]}}</a></li><br>
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+    </ul>
+</body>
+</html>
