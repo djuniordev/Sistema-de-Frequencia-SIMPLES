@@ -1,4 +1,4 @@
-# Sistema-de-Frequencia-SIMPLES
+# Sistema de Frequência Python | Flask | HTML
  
 O Sistema de Frequência Simples é uma aplicação web desenvolvida com o objetivo de aprimorar o processo de chamada de alunos em sala de aula. Utilizando a biblioteca Pandas do Python, o sistema realiza a leitura de uma planilha do Excel contendo os dados dos alunos e adiciona uma nova coluna com a data e o estado de presença ou falta de cada um deles.
 
