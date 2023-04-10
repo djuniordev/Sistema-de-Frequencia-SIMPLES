@@ -1,2 +1,2 @@
-* linguist-vendored
-*.html linguist-vendored=false
+templates/* linguist-vendored
+Sistema/templates/* linguist-vendored
